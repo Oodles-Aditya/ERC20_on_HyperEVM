@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-contract MockUSDC {
+contract HypeToken {
     string public name = "Hype Coin";
     string public symbol = "HYP";
     uint8 public decimals = 6;

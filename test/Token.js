@@ -1,13 +1,13 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("CustomToken", function () {
+describe("HypeToken", function () {
   let token, owner, addr1, addr2;
 
   beforeEach(async function () {
     [owner, addr1, addr2] = await ethers.getSigners();
-    const Token = await ethers.getContractFactory("CustomToken");
-    token = await Token.deploy(1000000); 
+    const Token = await ethers.getContractFactory("HypeToken");
+    token = await Token.deploy(1000000);
     await token.waitForDeployment();
   });
 
